@@ -1,4 +1,4 @@
-# Solve Me First
+# A Very Big Sum
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -63,19 +63,39 @@ When we add several integer values, the resulting sum might exceed the above ran
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T07:40:44.764Z  
+**Submitted:** 2026-09-04T13:20:54.601Z  
 
 ```py
+#!/bin/python3
 
+import math
+import os
+import random
+import re
+import sys
 
-def solveMeFirst(a,b):
-	# Hint: Type return a+b below
-    return a+b
+#
+# Complete the 'aVeryBigSum' function below.
+#
+# The function is expected to return a LONG_INTEGER.
+# The function accepts LONG_INTEGER_ARRAY ar as parameter.
+#
 
-num1 = int(input())
-num2 = int(input())
-res = solveMeFirst(num1,num2)
-print(res)
+def aVeryBigSum(ar):
+    # Write your code here
+    return sum(ar)
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    ar_count = int(input().strip())
+
+    ar = list(map(int, input().rstrip().split()))
+
+    result = aVeryBigSum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
 
 ```
 
