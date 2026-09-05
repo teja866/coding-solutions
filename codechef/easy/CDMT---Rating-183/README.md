@@ -76,11 +76,15 @@ This year's event was not more successful than the previous year, as the number 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T06:20:01.096Z  
+**Submitted:** 2026-09-05T06:13:53.544Z  
 
 ```py
+# cook your dish here
 x,y=map(int,input().split())
-print("Yes" if y>x else "No")
+if y>=x:
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
