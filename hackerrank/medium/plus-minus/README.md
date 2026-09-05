@@ -1,4 +1,4 @@
-# Diagonal Difference
+# Plus Minus
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -43,7 +43,7 @@ $-100 \le arr[i] \le 100$
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T13:32:01.777Z  
+**Submitted:** 2026-09-05T05:51:09.670Z  
 
 ```py
 #!/bin/python3
@@ -55,42 +55,34 @@ import re
 import sys
 
 #
-# Complete the 'diagonalDifference' function below.
+# Complete the 'plusMinus' function below.
 #
-# The function is expected to return an INTEGER.
-# The function accepts 2D_INTEGER_ARRAY arr as parameter.
+# The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-def diagonalDifference(arr):
+def plusMinus(arr):
     # Write your code here
     n=len(arr)
-    sum1=0
+    pos=0
+    neg=0
+    z=0
     for i in range(n):
-        for j in range(n):
-            if i==j:
-                sum1+=arr[i][j]
-    
-    sum2=0
-    for i in range(n):
-            sum2+=arr[i][n-1-i]
-            
-    return abs(sum1-sum2)
+        if arr[i]<0:
+            neg+=1
+        elif arr[i]>0:
+            pos+=1
+        else:
+            z+=1
+    print(round(pos/n,6))
+    print(round(neg/n,6))
+    print(round(z/n,6))
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
     n = int(input().strip())
 
-    arr = []
+    arr = list(map(int, input().rstrip().split()))
 
-    for _ in range(n):
-        arr.append(list(map(int, input().rstrip().split())))
-
-    result = diagonalDifference(arr)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    plusMinus(arr)
 
 ```
 
