@@ -85,12 +85,12 @@ Each worksheet has $5$ questions. Even if Chef completes $10$ of them for $10\cd
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T12:22:39.850Z  
+**Submitted:** 2026-09-05T12:23:34.803Z  
 
 ```py
 # cook your dish here
 x,y=map(int,input().split())
-if x+y*10>100:
+if x+(y*10)>=100:
     print("Yes")
 else:
     print("No")
