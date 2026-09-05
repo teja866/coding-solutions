@@ -82,7 +82,7 @@ Note that even though it has the three letters `n`, `t`, and `a`, they are not i
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T12:28:24.665Z  
+**Submitted:** 2026-09-05T12:29:04.673Z  
 
 ```py
 # cook your dish here
@@ -90,7 +90,7 @@ s=input().strip()
 n=len(s)
 count=0
 for i in range(n):
-    if i==2 and s[i]=='n' or i==3 and s[i]=='t' or i==4 and s[i]=='a':
+    if i==2 and s[i]=='n' and i==3 and s[i]=='t' and i==4 and s[i]=='a':
         count=1
     else:
         count=0
