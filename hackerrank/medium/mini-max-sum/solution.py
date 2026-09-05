@@ -7,31 +7,25 @@ import re
 import sys
 
 #
-# Complete the 'plusMinus' function below.
+# Complete the 'miniMaxSum' function below.
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-def plusMinus(arr):
+def miniMaxSum(arr):
     # Write your code here
+    arr.sort()
     n=len(arr)
-    pos=0
-    neg=0
-    z=0
-    for i in range(n):
-        if arr[i]<0:
-            neg+=1
-        elif arr[i]>0:
-            pos+=1
-        else:
-            z+=1
-    print(round(pos/n,6))
-    print(round(neg/n,6))
-    print(round(z/n,6))
+    minsum=0
+    maxsum=0
+    for i in range(n-1):
+        minsum+=arr[i]
+    for i in range(1,n):
+        maxsum+=arr[i]
+    print(minsum,maxsum)
 
 if __name__ == '__main__':
-    n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))
 
-    plusMinus(arr)
+    miniMaxSum(arr)
