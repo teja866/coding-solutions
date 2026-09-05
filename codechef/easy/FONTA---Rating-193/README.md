@@ -82,19 +82,14 @@ Note that even though it has the three letters `n`, `t`, and `a`, they are not i
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T12:29:04.673Z  
+**Submitted:** 2026-09-05T12:31:37.796Z  
 
 ```py
 # cook your dish here
 s=input().strip()
 n=len(s)
 count=0
-for i in range(n):
-    if i==2 and s[i]=='n' and i==3 and s[i]=='t' and i==4 and s[i]=='a':
-        count=1
-    else:
-        count=0
-if count>0:
+if n>=3 and s[n-3]=='n' and s[n-2]=='t' and s[n-1]=='a':
     print("Yes")
 else:
     print("No")
