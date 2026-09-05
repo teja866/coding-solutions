@@ -1,5 +1,6 @@
-x,y = map(int,input().split())
+# cook your dish here
+x,y=map(int,input().split())
 if y>x:
-    print("YEs")
+    print("YES")
 else:
     print("NO")
