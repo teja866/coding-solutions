@@ -47,13 +47,25 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.3 MB (beats 87.18%)  
-**Submitted:** 2026-09-06T05:49:23.430Z  
+**Memory:** 19.5 MB (beats 56.71%)  
+**Submitted:** 2026-09-06T05:59:36.224Z  
 
 ```py
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        return pow(x,n)
+        num=1
+        if n<0:
+            x=1/x
+            n=-n
+        while n>0:
+            #id n is odd, multiply once
+            if n%2==1:
+                num*=x
+            #square the base
+            x*=x
+            #halve the exponent
+            n//=2
+        return num
 ```
 
 ---
