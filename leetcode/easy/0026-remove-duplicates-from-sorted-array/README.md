@@ -62,25 +62,22 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Python  
-**Runtime:** 23 ms (beats 7.00%)  
+**Runtime:** 19 ms (beats 8.70%)  
 **Memory:** 20.6 MB (beats 42.88%)  
-**Submitted:** 2026-09-06T05:35:36.533Z  
+**Submitted:** 2026-09-06T05:38:10.712Z  
 
 ```py
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         seen=[]
         duplicates=[]
-        k=0
         for i in range(len(nums)):
             if nums[i] in seen:
                 duplicates.append(nums[i])
             else:
                 seen.append(nums[i])
-                nums[k]=nums[i]
-                k+=1
-        k=len(seen)
-        return k
+        nums[:]=seen      
+        return len(seen)
 ```
 
 ---
