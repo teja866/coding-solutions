@@ -7,25 +7,31 @@ import re
 import sys
 
 #
-# Complete the 'miniMaxSum' function below.
+# Complete the 'birthdayCakeCandles' function below.
 #
-# The function accepts INTEGER_ARRAY arr as parameter.
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY candles as parameter.
 #
 
-def miniMaxSum(arr):
+def birthdayCakeCandles(candles):
     # Write your code here
-    arr.sort()
-    n=len(arr)
-    minsum=0
-    maxsum=0
+    n=len(candles)
+    a=[]
     for i in range(n-1):
-        minsum+=arr[i]
-    for i in range(1,n):
-        maxsum+=arr[i]
-    print(minsum,maxsum)
+        if candles[i]>=candles[i+1]:
+            a.append(candles[i])
+    return len(a)
+            
 
 if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    arr = list(map(int, input().rstrip().split()))
+    candles_count = int(input().strip())
 
-    miniMaxSum(arr)
+    candles = list(map(int, input().rstrip().split()))
+
+    result = birthdayCakeCandles(candles)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
