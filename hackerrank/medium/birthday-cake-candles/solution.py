@@ -15,13 +15,15 @@ import sys
 
 def birthdayCakeCandles(candles):
     # Write your code here
-    n=len(candles)
-    a=[]
-    for i in range(n-1):
-        if candles[i]>=candles[i+1]:
-            a.append(candles[i])
-    return len(a)
-            
+    max_height=0
+    count=0
+    for i in candles:
+        if i>max_height:
+            max_height=i
+            count=1
+        elif i==max_height:
+            count+=1
+    return count    
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
