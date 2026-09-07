@@ -58,7 +58,7 @@ We print `ORDINARY` since day is not $25$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T13:28:39.899Z  
+**Submitted:** 2026-09-07T13:28:53.056Z  
 
 ```py
 # cook your dish here
