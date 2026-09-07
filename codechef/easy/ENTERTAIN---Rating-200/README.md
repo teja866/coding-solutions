@@ -61,13 +61,12 @@ Chef can buy a television for all $10$ children to watch. This is cheaper than b
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T13:16:57.684Z  
+**Submitted:** 2026-09-07T13:19:21.680Z  
 
 ```py
 # cook your dish here
 n=int(input())
-t=n
-if n*200<n*1000:
+if n*200<1000:
     print(200)
 else:
     print(1000)
