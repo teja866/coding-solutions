@@ -68,7 +68,7 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:48:48.090Z  
+**Submitted:** 2026-09-09T14:48:56.955Z  
 
 ```py
 # cook your dish here
