@@ -1,6 +1,6 @@
 # cook your dish here
 n,x,y=map(int,input().split())
 if n>=2*x and n>=2*y:
-    print("Yes")
+    print("YES")
 else:
-    print("No")
+    print("NO")
