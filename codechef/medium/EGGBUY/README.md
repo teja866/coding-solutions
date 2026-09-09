@@ -68,12 +68,14 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:48:01.674Z  
+**Submitted:** 2026-09-09T14:48:48.090Z  
 
 ```py
 # cook your dish here
 x,y,f=map(int,input().split())
-print(12*x if x<f*y else 12*y+f)
+near=12*x 
+far=12*y+f 
+print(near if near<far else far)
 ```
 
 ---
