@@ -1,6 +1,8 @@
 # cook your dish here
 a,b=map(int,input().split())
-a=a-b
-b=b-a
-a=a+b 
-print(a)
+min1=0
+if a<b:
+    min1=a
+else:
+    min1=b 
+print(min1)
