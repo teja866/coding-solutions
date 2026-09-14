@@ -2,12 +2,11 @@
 n=int(input())
 a=list(map(int,input().split()))
 
-mid=(a[0]+a[-1])//2
+a.sort()
 
-if n%2==0:
-    if a[n//2]<=mid:
-        print(a[n//2])
+if n%2==1:
+    print(a[n//2])
 else:
+    mid=(a[n//2-1]+a[n//2])/2
     print(mid)
-    
         
