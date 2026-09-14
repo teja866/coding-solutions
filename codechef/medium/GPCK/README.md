@@ -41,7 +41,6 @@ Chef can prepare $3$ gift packs using $3$ notebooks and all $3$ pens. The remain
 ### Sample 2:
 Input
 Output
-Copy to clipboard
 
 ```
 2 6
@@ -60,7 +59,7 @@ Chef has only $2$ notebooks, so he can prepare at most $2$ gift packs.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:25:14.056Z  
+**Submitted:** 2026-09-14T14:25:32.642Z  
 
 ```py
 # cook your dish here
