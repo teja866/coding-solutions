@@ -7,5 +7,6 @@ a.sort()
 if n%2==1:
     print(a[n//2])
 else:
-    print(a[n//2-1])
+    mid=(a[n//2-1]+a[n//2])//2
+    print(mid)
         
