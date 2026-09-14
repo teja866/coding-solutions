@@ -78,13 +78,12 @@ Yes
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T15:06:34.407Z  
+**Submitted:** 2026-09-14T15:07:45.535Z  
 
 ```py
 # cook your dish here
 s=input().strip()
-s1="cat"
-if s1 in s+s:
+if sorted(s)==sorted("cat"):
     print("Yes")
 else:
     print("No")
