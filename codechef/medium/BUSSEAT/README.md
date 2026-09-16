@@ -54,7 +54,7 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:41:31.397Z  
+**Submitted:** 2026-09-16T14:42:10.390Z  
 
 ```py
 # cook your dish here
