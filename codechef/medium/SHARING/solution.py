@@ -1,6 +1,7 @@
 # cook your dish here
 a,b=map(int,input().split())
-if a%2==0:
-    print(a-b)
+c=a+b
+if c%2==0:
+    print((a-b)//2)
 else:
     print("-1")
