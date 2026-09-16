@@ -59,13 +59,14 @@ The total number of cookies is $7$, which is not dividable fairly between Alice 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:37:19.455Z  
+**Submitted:** 2026-09-16T14:39:15.809Z  
 
 ```py
 # cook your dish here
 a,b=map(int,input().split())
-if a%2==0:
-    print(a-b)
+c=a+b
+if c%2==0:
+    print((a-b)//2)
 else:
     print("-1")
 ```
