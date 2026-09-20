@@ -62,20 +62,20 @@ There are no intersecting interval pairs. Hence, the answer is 0.
 **Language:** Python  
 **Runtime:** 87 ms (beats 100.00%)  
 **Memory:** 19.2 MB (beats 100.00%)  
-**Submitted:** 2026-09-20T02:59:34.638Z  
+**Submitted:** 2026-09-20T03:30:31.302Z  
 
 ```py
 class Solution:
     def countIntersectingIntervals(self, intervals: list[list[int]]) -> int:
-        n=len(intervals)
-        count=0
-        for i in range(n):
-            for j in range(i+1,n):
-                a,b=intervals[i]
-                c,d=intervals[j]
-                if max(a,c)<=min(b,d):
-                    count+=1
-        return count
+        length=len(intervals)
+        countofpairs=0
+        for i in range(length):
+            for j in range(i+1,length):
+                start1,end1=intervals[i]
+                start2,end2=intervals[j]
+                if max(start1,start2)<=min(end1,end2):
+                    countofpairs+=1
+        return countofpairs
 ```
 
 ---
