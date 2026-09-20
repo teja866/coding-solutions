@@ -52,9 +52,9 @@ Explanation: The only possible triplet sums up to 0.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.4 MB  
-**Submitted:** 2026-09-20T01:46:54.168Z  
+**Runtime:** 635 ms (beats 56.92%)  
+**Memory:** 22.3 MB (beats 55.23%)  
+**Submitted:** 2026-09-20T01:47:03.838Z  
 
 ```py
 class Solution:
