@@ -53,17 +53,18 @@ Output: [0,1]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2473 ms (beats 5.15%)  
-**Memory:** 19.5 MB (beats 99.41%)  
-**Submitted:** 2026-09-03T07:16:16.267Z  
+**Runtime:** 1731 ms (beats 21.16%)  
+**Memory:** 19.8 MB (beats 73.20%)  
+**Submitted:** 2026-09-22T15:28:52.271Z  
 
 ```py
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(len(nums)-1):
-            for j in range(i,len(nums)-1):
-                if nums[i]+nums[j+1]==target:
-                    return i,j+1
+        n=len(nums)
+        for i in range(n):
+            for j in range(i+1,n):
+                if nums[i]+nums[j]==target:
+                    return i,j
 ```
 
 ---
