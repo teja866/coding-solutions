@@ -56,9 +56,9 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7 ms (beats 33.32%)  
-**Memory:** 22.4 MB (beats 6.02%)  
-**Submitted:** 2026-09-22T15:44:26.512Z  
+**Runtime:** 9 ms (beats 8.85%)  
+**Memory:** 22.4 MB (beats 11.35%)  
+**Submitted:** 2026-09-22T15:45:27.590Z  
 
 ```py
 class Solution:
