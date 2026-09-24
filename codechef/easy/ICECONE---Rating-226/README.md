@@ -41,15 +41,12 @@ Chef has 10 cones and 5 scoops of ice cream. Chef can make a maximum of 5 ice cr
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T04:43:04.461Z  
+**Submitted:** 2026-09-24T04:44:07.871Z  
 
 ```py
 # cook your dish here
 x,y=map(int,input().split())
-if x<=y:
-    print(x)
-else:
-    print(y)
+print(min(x,y))
 ```
 
 ---
