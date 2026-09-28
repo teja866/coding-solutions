@@ -82,16 +82,16 @@ Therefore, no energy is required.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T14:33:33.763Z  
+**Submitted:** 2026-09-28T14:35:43.474Z  
 
 ```py
 # cook your dish here
-n=int(input())
+n=int(input().strip())
 a=list(map(int,input().split()))
 minH=min(a)
 total=sum(a)-n*minH
 print(total)
-        
+
 ```
 
 ---
