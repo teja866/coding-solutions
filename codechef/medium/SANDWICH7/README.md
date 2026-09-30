@@ -57,14 +57,14 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:34:23.066Z  
+**Submitted:** 2026-09-30T14:34:41.299Z  
 
 ```py
 # cook your dish here
 b,h,c=map(int,input().split())
 maxbread=b//2
 total=h+c 
-if maxbread>total:
+if maxbread<total:
     print(maxbread)
 else:
     print(total)
