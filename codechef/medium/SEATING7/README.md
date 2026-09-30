@@ -56,7 +56,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:51:20.578Z  
+**Submitted:** 2026-09-30T14:52:52.572Z  
 
 ```py
 # cook your dish here
@@ -71,7 +71,8 @@ for _ in range(t):
     for i in range(1,n):
         if a[i]==0:
             missing.append(i)
-    print(missing)
+    result=missing[:k]
+    print(*result)
 ```
 
 ---
