@@ -29,7 +29,6 @@ For each test case, output on a new line the minimum edits to make the array $A$
 ### Sample 1:
 Input
 Output
-Copy to clipboard
 
 ```
 3
@@ -59,7 +58,7 @@ Copy to clipboard
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:59:20.798Z  
+**Submitted:** 2026-09-30T14:59:40.765Z  
 
 ```py
 # cook your dish here
