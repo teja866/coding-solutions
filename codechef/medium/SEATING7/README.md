@@ -56,7 +56,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:53:33.779Z  
+**Submitted:** 2026-09-30T14:51:20.578Z  
 
 ```py
 # cook your dish here
@@ -68,12 +68,10 @@ for _ in range(t):
     for seat in occupied:
         a[seat]=seat 
     missing=[]
-    for i in range(1,n+1):
+    for i in range(1,n):
         if a[i]==0:
             missing.append(i)
-    result=missing[:k]
-    print(*result)
-    
+    print(missing)
 ```
 
 ---
