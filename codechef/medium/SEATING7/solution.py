@@ -7,8 +7,9 @@ for _ in range(t):
     for seat in occupied:
         a[seat]=seat 
     missing=[]
-    for i in range(1,n):
+    for i in range(1,n+1):
         if a[i]==0:
             missing.append(i)
     result=missing[:k]
     print(*result)
+    
