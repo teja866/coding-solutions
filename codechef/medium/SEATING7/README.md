@@ -56,19 +56,22 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:44:22.584Z  
+**Submitted:** 2026-09-30T14:49:06.574Z  
 
 ```py
 # cook your dish here
 t=int(input())
 for _ in range(t):
     n,m,k=map(int,input().split())
-    a=[]
-    for i in range(n):
-        if i==m:
-            val=int(input())
-            a.append(val)
-    print(a)
+    a=[0]*(n+1)
+    for i in range(m):
+        seat=int(input())
+        a[seat]=seat 
+    missing=[]
+    for i in range(n+1):
+        if a[i]==0:
+            missing.append(i)
+    print(missing)
 ```
 
 ---
