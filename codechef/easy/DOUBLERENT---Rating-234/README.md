@@ -74,7 +74,7 @@ Chef was initially paying $10$ rupees. After Chefina moves in, he needs to pay $
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T06:50:36.784Z  
+**Submitted:** 2026-10-01T06:50:44.169Z  
 
 ```py
 # cook your dish here
