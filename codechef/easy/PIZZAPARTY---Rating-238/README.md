@@ -74,13 +74,14 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T07:06:07.403Z  
+**Submitted:** 2026-10-01T07:08:23.493Z  
 
 ```py
 # cook your dish here
 a,b=map(int,input().split())
 total=(a+1)*4+b*3
-print((total//8)+1)
+pizza=(total+7)//8
+print(pizza)
 ```
 
 ---
