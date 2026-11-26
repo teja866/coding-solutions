@@ -75,14 +75,14 @@ The character finishes $8$ steps to the right of its starting position, so the d
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T00:19:19.862Z  
+**Submitted:** 2026-11-26T00:20:48.854Z  
 
 ```py
 # cook your dish here
 r,l=map(int,input().split())
 total=r-l
 if total<0:
-    print(total+10)
+    print(-total)
 else:
     print(total)
 ```
