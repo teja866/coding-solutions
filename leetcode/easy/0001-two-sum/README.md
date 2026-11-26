@@ -12,30 +12,37 @@ You can return the answer in any order.
 
  
 
+Original
+Python3
  **Example 1:** 
 
-```
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+ **Input:**  `nums = [2,7,11,15], target = 9`
 
-```
+ **Output:**  `[0,1]`
+
+ **Explanation:** 
+
+The sum of `nums[0]` and `nums[1]` is `2 + 7 = 9`, which equals the target. Therefore, the indices `[0, 1]` are returned.
 
  **Example 2:** 
 
-```
-Input: nums = [3,2,4], target = 6
-Output: [1,2]
+ **Input:**  `nums = [3,2,4], target = 6`
 
-```
+ **Output:**  `[1,2]`
+
+ **Explanation:** 
+
+The sum of `nums[1]` and `nums[2]` is `2 + 4 = 6`, which equals the target. Therefore, the indices `[1, 2]` are returned.
 
  **Example 3:** 
 
-```
-Input: nums = [3,3], target = 6
-Output: [0,1]
+ **Input:**  `nums = [3,3], target = 6`
 
-```
+ **Output:**  `[0,1]`
+
+ **Explanation:** 
+
+The sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Therefore, the indices `[0, 1]` are returned.
 
  
 
@@ -53,18 +60,21 @@ Output: [0,1]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1731 ms (beats 21.16%)  
-**Memory:** 19.8 MB (beats 73.20%)  
-**Submitted:** 2026-09-22T15:28:52.271Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 20.4 MB (beats 46.99%)  
+**Submitted:** 2026-11-26T01:17:37.587Z  
 
 ```py
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         n=len(nums)
+        hm={}
         for i in range(n):
-            for j in range(i+1,n):
-                if nums[i]+nums[j]==target:
-                    return i,j
+            compli=target-nums[i]
+            if compli in hm:
+                return [hm[compli],i]
+            hm[nums[i]]=i
+        
 ```
 
 ---
