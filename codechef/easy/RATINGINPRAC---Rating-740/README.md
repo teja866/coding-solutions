@@ -62,7 +62,7 @@ No
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T00:46:57.543Z  
+**Submitted:** 2026-11-26T00:48:19.070Z  
 
 ```py
 t = int(input())
@@ -71,12 +71,11 @@ while t > 0:
     n = int(input())
     d = list(map(int, input().split()))
     # Your code goes here
-    flag=False
+    flag=True
     for i in range(n-1):
-        if d[i]<d[i+1]:
-            flag=True
-        else:
+        if d[i]>d[i+1]:
             flag=False
+            break
     print("Yes" if flag else "No")
     t -= 1
 
